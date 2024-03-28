@@ -5,7 +5,7 @@
 - PEREZ Pablo 🥉
 - ROSSI Nathan 👽
 
-# INSTALLATION
+### INSTALLATION
 
 ```bash
 # venv -> 
@@ -15,7 +15,7 @@ $ .\venv\Script\activate
 $ pip install requirements.txt
 ```
 
-# LANCER L'APP
+### LANCER L'APP
 
 ```bash
 $ streamlit run app.py
