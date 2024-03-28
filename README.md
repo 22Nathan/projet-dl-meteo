@@ -1,5 +1,10 @@
 # projet-dl-meteo
 
+- SUBA KHAN Shamnawaz 🔥
+- DELACROIX Adrien 💪
+- PEREZ Pablo 🥉
+- ROSSI Nathan 👽
+
 # INSTALLATION
 
 ```bash
