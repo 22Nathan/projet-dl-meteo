@@ -37,16 +37,9 @@ with open('models_ARIMA/arima_model_rr.pkl', 'rb') as f:
 with open('models_ARIMA/arima_model_tx.pkl', 'rb') as f:
     model_tx = pickle.load(f)
 
-# predictions_in = model_in.forecast(steps=184)
-# predictions_rr = model_rr.forecast(steps=184)
-# predictions_tx = model_tx.forecast(steps=184)
 
-# print(
-#     predictions_in,
-#     predictions_rr
-# )
 
-st.title('L.A. Beat')
+st.title('L.A. Beat 🦅')
 
 col1, col2 = st.columns(2)
 with col1:
@@ -56,7 +49,8 @@ with col2:
     if st.button('ballons'):
         st.balloons()
 
-number_rr = st.number_input('RR / précipitation', min_value=0, max_value=100, step=1)
+st.write('Cumul mensuel des hauteurs de précipitation en mm')
+number_rr = st.number_input('RR / précipitation |> nb de mois', min_value=0, max_value=100, step=1)
 if number_rr:
     predictions_rr = model_rr.forecast(steps=number_rr)
 
@@ -71,7 +65,8 @@ if number_rr:
 
 ###
 
-number_in = st.number_input('IN / ensoleillement', min_value=0, max_value=100, step=1)
+st.write('Cumul mensuel des durées d\'insolation en heures')
+number_in = st.number_input('IN / ensoleillement |> nb de mois', min_value=0, max_value=100, step=1)
 if number_in:
     predictions_in = model_in.forecast(steps=number_in)
 
@@ -86,7 +81,8 @@ if number_in:
 
 ###
 
-number_tx = st.number_input('TX / température', min_value=0, max_value=100, step=1)
+st.write('Moyenne mensuelle de la température maximale sous abri en °C')
+number_tx = st.number_input('TX / température |> nb de mois', min_value=0, max_value=100, step=1)
 if number_tx:
     predictions_tx = model_tx.forecast(steps=number_tx)
 
