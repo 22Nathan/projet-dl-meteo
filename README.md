@@ -1,6 +1,6 @@
 # projet-dl-meteo
 
-- SUBA KHAN Shamnawaz 🤙🏿
+- SUBA KHAN Shamnawaz (= entité climatosceptique) 🤙🏿
 - DELACROIX Adrien 💪
 - PEREZ Pablo 🥉
 - ROSSI Nathan 👽
