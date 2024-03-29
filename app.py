@@ -56,7 +56,7 @@ with col2:
     if st.button('ballons'):
         st.balloons()
 
-number_rr = st.number_input('RR', min_value=0, max_value=100, step=1)
+number_rr = st.number_input('RR / précipitation', min_value=0, max_value=100, step=1)
 if number_rr:
     predictions_rr = model_rr.forecast(steps=number_rr)
 
@@ -71,7 +71,7 @@ if number_rr:
 
 ###
 
-number_in = st.number_input('IN', min_value=0, max_value=100, step=1)
+number_in = st.number_input('IN / ensoleillement', min_value=0, max_value=100, step=1)
 if number_in:
     predictions_in = model_in.forecast(steps=number_in)
 
@@ -86,7 +86,7 @@ if number_in:
 
 ###
 
-number_tx = st.number_input('TX', min_value=0, max_value=100, step=1)
+number_tx = st.number_input('TX / température', min_value=0, max_value=100, step=1)
 if number_tx:
     predictions_tx = model_tx.forecast(steps=number_tx)
 
