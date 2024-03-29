@@ -37,17 +37,17 @@ with open('models_ARIMA/arima_model_rr.pkl', 'rb') as f:
 with open('models_ARIMA/arima_model_tx.pkl', 'rb') as f:
     model_tx = pickle.load(f)
 
+# st.title('L.A. Beat 🦅')
 
-
-st.title('L.A. Beat 🦅')
-
-col1, col2 = st.columns(2)
-with col1:
-    if st.button('neige'):
-        st.snow()
-with col2:
-    if st.button('ballons'):
-        st.balloons()
+# col1, col2 = st.columns(2)
+# with col1:
+#     if st.button('neige'):
+#         st.snow()
+# with col2:
+#     if st.button('ballons'):
+#         st.balloons()
+    
+st.title('Projet IA - prédictions météologiques')
 
 st.write('Cumul mensuel des hauteurs de précipitation en mm')
 number_rr = st.number_input('RR / précipitation |> nb de mois', min_value=0, max_value=100, step=1)
