@@ -47,7 +47,7 @@ with open('models_ARIMA/arima_model_tx.pkl', 'rb') as f:
 #     if st.button('ballons'):
 #         st.balloons()
     
-st.title('Projet IA - prédictions météologiques')
+st.title('Projet IA - prédictions météorologiques')
 
 st.write('Cumul mensuel des hauteurs de précipitation en mm')
 number_rr = st.number_input('RR / précipitation |> nb de mois', min_value=0, max_value=100, step=1)
