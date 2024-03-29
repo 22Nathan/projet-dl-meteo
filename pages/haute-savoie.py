@@ -17,3 +17,7 @@ highlighted_area = folium.Polygon(
 ).add_to(m)
 
 st_data = st_folium(m, width=725)
+
+st.image('./img_HS/1.png')
+st.image('./img_HS/2.png')
+st.image('./img_HS/3.png')
